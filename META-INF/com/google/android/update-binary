@@ -40,9 +40,6 @@ print_modname() {
   ui_print "$pounds"
   ui_print " $MODNAME "
   ui_print "$pounds"
-  ui_print "******************************"
-  ui_print " 由 Magisk 提供技术支持(在安装模块时打印作者信息) "
-  ui_print "******************************"
 }
 
 ##############
