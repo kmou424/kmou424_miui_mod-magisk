@@ -1,3 +1,9 @@
+if [ ! -d "old" ]; then
+	mkdir old
+fi
+
+mv *.zip old/
+
 DATE=`date --date='0 days ago' "+%Y-%m-%d"`
 TIME=`date --date='0 days ago' "+%H:%M:%S"`
 
@@ -14,6 +20,6 @@ versionCode=1
 author=kmou424
 description=kmou424的自用功能性集合Magisk模块 for MIUI。 Build on $HOST@$ME" > module.prop
 
-zip -r -0 kmou424_MIUI_mod_$DATE2_$TIME2.zip * -x "pack.sh" ".gitignore" "*.zip" "*.bak"
+zip -r -0 kmou424_MIUI_mod_$DATE2_$TIME2.zip * -x "pack.sh" ".gitignore" "*.zip" "*.bak" "old/"
 
 rm -rf module.prop
