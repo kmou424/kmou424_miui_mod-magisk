@@ -4,4 +4,11 @@ SKIPUNZIP=0
 # Define MOD directory
 MODDIR=${0%/*}
 
+TMP=/data/tmp
+mkdir -p $TMP/assets
+unzip -o $ZIPFILE "assets/*" -d $TMP
+
 . $TMP/assets/bin/miui_feature_patcher.sh
+. $TMP/assets/bin/performance_thermal_patcher.sh
+
+rm -rf $TMP
