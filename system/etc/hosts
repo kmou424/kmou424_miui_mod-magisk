@@ -1,0 +1,13 @@
+127.0.0.1       localhost
+::1             ip6-localhost
+
+# MIUI System Common CloudConfig Server Start
+127.0.0.1       ccc.sys.miui.com              # China
+127.0.0.1       ccc.sys.intl.xiaomi.com       # International
+127.0.0.1       ccc.sys.rus.xiaomi.com        # Russian
+127.0.0.1       staging.ccc.sys.xiaomi.srv    # Staging
+127.0.0.1       jupiter.sys.miui.com          # New China
+127.0.0.1       jupiter.intl.sys.miui.com     # New International
+127.0.0.1       jupiter.rus.sys.miui.com      # New Russian
+127.0.0.1       preview.jupiter.sys.miui.com  # New Staging
+# MIUI System Common CloudConfig Server End
