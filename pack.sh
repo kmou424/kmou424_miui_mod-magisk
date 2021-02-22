@@ -14,6 +14,6 @@ versionCode=1
 author=kmou424
 description=kmou424的自用功能性集合Magisk模块 for MIUI。 Build on $HOST@$ME" > module.prop
 
-zip -r -0 kmou424_MIUI_mod-$DATE2-$TIME2.zip * -x "pack.sh" ".gitignore"
+zip -r -0 kmou424_MIUI_mod-$DATE2-$TIME2.zip * -x "pack.sh" ".gitignore" "*.zip"
 
 rm -rf module.prop
