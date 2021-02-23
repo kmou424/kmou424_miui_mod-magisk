@@ -1,7 +1,7 @@
 VERSION=0.1-Alpha
 SUBVERSION=-debug
 
-if [[ ! -d old ]]; then
+if [ ! -d "old" ]; then
 	mkdir old
 fi
 
