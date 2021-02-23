@@ -1,2 +1,19 @@
+logx "Starting Kill Process"
+
+sleep 20s
+
 # Kill Process
-kill -9 $(pidof logd)
+function kill_process()
+{
+  logx "Killing $1"
+  kill -9 $(pidof $1)
+  if [ $? -eq 0 ]; then
+     logx "Success"
+  else
+     logx "Failed"
+  fi
+  done
+}
+
+# Kill logd
+kill_process logd
