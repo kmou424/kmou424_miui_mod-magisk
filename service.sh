@@ -10,3 +10,4 @@ UTILSPATH=/data/kmou424
 
 . ${UTILSPATH}/assets/bin/shit_log_remover.sh
 . ${UTILSPATH}/assets/bin/kill_process.sh
+. ${UTILSPATH}/assets/bin/renice.sh
