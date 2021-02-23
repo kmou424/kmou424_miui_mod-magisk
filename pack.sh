@@ -1,4 +1,4 @@
-VERSION=0.1-Alpha
+VERSION=0.2-BETA
 SUBVERSION=-debug
 
 if [ ! -d "old" ]; then
