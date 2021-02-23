@@ -20,3 +20,6 @@ audio.offload.pcm.24bit.enable=true
 # Enbale Speaker Clean
 ro.vendor.audio.spk.clean=true
 ro.vendor.audio.sfx.earadj=true
+
+# Force load Home process into memory
+ro.HOME_APP_ADJ=1
