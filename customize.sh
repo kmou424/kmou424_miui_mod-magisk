@@ -4,11 +4,18 @@ SKIPUNZIP=0
 # Define MOD directory
 MODDIR=${0%/*}
 
-TMP=/data/tmp
-mkdir -p $TMP/assets
-unzip -o $ZIPFILE "assets/*" -d $TMP
+on_install() {
+  TMP=/data/tmp
+  mkdir -p $TMP/assets
+  unzip -o $ZIPFILE "assets/*" -d $TMP
 
-. $TMP/assets/bin/miui_feature_patcher.sh
-. $TMP/assets/bin/performance_thermal_patcher.sh
+  . $TMP/assets/bin/miui_feature_patcher.sh
+  . $TMP/assets/bin/performance_thermal_patcher.sh
 
-rm -rf $TMP
+  rm -rf $TMP
+}
+
+set_permissions() {
+  unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
+  set_perm_recursive  $MODPATH  0  0  0755  0644
+}
