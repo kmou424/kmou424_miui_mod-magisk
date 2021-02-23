@@ -1,4 +1,5 @@
-logx "Starting renice optimization"
+TAG=renice_opt
+logx "${TAG}: Starting renice optimization"
 
 function white_list()
 {
@@ -6,9 +7,9 @@ function white_list()
   renice -n -20 -p $pid
   done
   if [ $? -eq 0 ]; then
-     logx "$1 Done"
+     logx "${TAG}: $1 succeeded"
   else
-     logx "$1 Failed"
+     logx "${TAG}: $1 failed"
   fi
 }
 
@@ -38,4 +39,4 @@ white_list com.miui.freeform
 # WebView
 white_list com.google.android.webview:webview_service
 
-logx "Optimized Done"
+logx "${TAG}: Optimized done"
