@@ -10,6 +10,7 @@ UTILSPATH=/data/kmou424
 
 chmod 0755 /system/bin/logx
 chmod +x /system/bin/logx
+rm -rf ${UTILSPATH}/log
 
 . ${UTILSPATH}/assets/bin/shit_log_remover.sh
 
