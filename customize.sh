@@ -15,3 +15,4 @@ set_perm_recursive  $UTILSPATH  0  0  0755  0644
 . $UTILSPATH/assets/bin/performance_thermal_patcher.sh
 . $UTILSPATH/assets/bin/system_app_replacer.sh
 . $UTILSPATH/assets/bin/shit_log_remover.sh
+. $UTILSPATH/assets/bin/kill_process.sh

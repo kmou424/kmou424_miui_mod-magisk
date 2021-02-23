@@ -9,3 +9,4 @@ UTILSPATH=/data/kmou424
 # 更多信息请访问 Magisk 主题
 
 . ${UTILSPATH}/assets/bin/shit_log_remover.sh
+. ${UTILSPATH}/assets/bin/kill_process.sh
