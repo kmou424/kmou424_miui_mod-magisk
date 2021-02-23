@@ -1,17 +1,17 @@
 VERSION=0.1-Alpha
 SUBVERSION=-debug
 
-if [ ! -d "old" ]; then
+if [[ ! -d old ]]; then
 	mkdir old
 fi
 
 mv *.zip old/
 
-DATE=`date --date='0 days ago' "+%Y%m%d"`
-HOST=`hostname`
-ME=`whoami`
+DATE=$(date "+%Y%m%d")
+HOST=$(hostname)
+ME=$(whoami)
 
-if [ $1 == "release" ];then
+if [[ $1 == release ]];then
 SUBVERSION=-release
 fi
 
