@@ -17,6 +17,6 @@ on_install() {
 }
 
 set_permissions() {
-  unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
+  unzip -o "$ZIPFILE" -d $MODPATH >&2
   set_perm_recursive  $MODPATH  0  0  0755  0644
 }
