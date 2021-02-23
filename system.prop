@@ -4,3 +4,6 @@
 
 # 确保SurfaceFlinger缓冲区已开启
 debug.sf.latch_unsignaled=1
+
+# Low Memory Killer
+ro.lmk.use_minfree_levels=true
