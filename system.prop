@@ -1,3 +1,6 @@
 # 这个文件将被 resetprop 读取
 # 示例: 改变 dpi
 # ro.sf.lcd_density=320
+
+# 确保SurfaceFlinger缓冲区已开启
+debug.sf.latch_unsignaled=1
