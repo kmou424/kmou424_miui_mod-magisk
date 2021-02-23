@@ -23,3 +23,20 @@ ro.vendor.audio.sfx.earadj=true
 
 # Force load Home process into memory
 ro.HOME_APP_ADJ=1
+
+# Disable useless log (Thanks 酷安@Amktiao)
+vendor.bluetooth.startbtlogger=false
+persist.sys.offlinelog.kernel=false
+persist.sys.offlinelog.logcat=false
+persist.sys.offlinelog.logcatkernel=false
+ro.logdumpd.enabled=0
+ro.lmk.debug=false
+# Android Pie
+persist.camera.stats.test=0
+# Android Q/R
+vendor.persist.camera.stats.test=0
+ro.debuggable=0
+debug.mdpcomp.logs=0
+# Android ART LOGD
+dalvik.vm.dex2oat-minidebuginfo=false
+persist.sys.qlogd=0
