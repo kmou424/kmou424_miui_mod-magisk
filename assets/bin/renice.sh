@@ -4,12 +4,12 @@ function white_list()
 {
   pgrep -o $1 | while read pid; do
   renice -n -20 -p $pid
+  done
   if [ $? -eq 0 ]; then
      logx "$1 Done"
   else
      logx "$1 Failed"
   fi
-  done
 }
 
 # SurfaceFlinger

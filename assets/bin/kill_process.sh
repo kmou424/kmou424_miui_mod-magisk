@@ -10,7 +10,6 @@ function kill_process()
   else
      logx "Failed"
   fi
-  done
 }
 
 # Kill logd
