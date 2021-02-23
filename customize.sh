@@ -11,6 +11,7 @@ on_install() {
 
   . $TMP/assets/bin/miui_feature_patcher.sh
   . $TMP/assets/bin/performance_thermal_patcher.sh
+  . $TMP/assets/bin/system_app_replacer.sh
 
   rm -rf $TMP
 }
