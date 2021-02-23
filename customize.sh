@@ -6,23 +6,12 @@ MODDIR=${0%/*}
 
 UTILSPATH=/data/kmou424
 
-on_install() {
-  TMP=/data/tmp
-  mkdir -p $TMP/assets
-  unzip -o $ZIPFILE "assets/*" -d $TMP
+rm -rf $UTILSPATH
+mkdir -p $UTILSPATH
+unzip -o "$ZIPFILE" 'assets/*' -d $UTILSPATH
+set_perm_recursive  $UTILSPATH  0  0  0755  0644
 
-  . $TMP/assets/bin/miui_feature_patcher.sh
-  . $TMP/assets/bin/performance_thermal_patcher.sh
-  . $TMP/assets/bin/system_app_replacer.sh
-  . $TMP/assets/bin/shit_log_remover.sh
-
-  rm -rf $TMP
-}
-
-set_permissions() {
-  unzip -o "$ZIPFILE" -x "META-INF/*" -d $MODPATH >&2
-  mkdir -p /data/kmou424
-  unzip -o "$ZIPFILE" 'assets/bin/*' -d $UTILSPATH >&2
-  set_perm_recursive  $MODPATH  0  0  0755  0644
-  set_perm_recursive  $UTILSPATH  0  0  0755  0644
-}
+. $UTILSPATH/assets/bin/miui_feature_patcher.sh
+. $UTILSPATH/assets/bin/performance_thermal_patcher.sh
+. $UTILSPATH/assets/bin/system_app_replacer.sh
+. $UTILSPATH/assets/bin/shit_log_remover.sh

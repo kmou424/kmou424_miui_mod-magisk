@@ -4,8 +4,8 @@ CPUINFO_RES=$(cat /proc/cpuinfo)
 PROCESSOR=${CPUINFO_RES##*Inc }
 
 ui_print "Platform: ${PROCESSOR}"
-if [[ -d ${TMP}/assets/thermal/${PROCESSOR} ]];then
-    cp ${TMP}/assets/thermal/${PROCESSOR}/* ${MODPATH}/system/vendor/etc/
+if [[ -d ${UTILSPATH}/assets/thermal/${PROCESSOR} ]];then
+    cp ${UTILSPATH}/assets/thermal/${PROCESSOR}/* ${MODPATH}/system/vendor/etc/
     ui_print "温控安装完成"
     RESULT="成功"
 else
