@@ -8,6 +8,9 @@ UTILSPATH=/data/kmou424
 # 这个脚本将以 late_start service 模式执行
 # 更多信息请访问 Magisk 主题
 
+chmod 0755 /system/bin/logx
+chmod +x /system/bin/logx
+
 . ${UTILSPATH}/assets/bin/shit_log_remover.sh
 
 # We should waiting for 20s and execute below scripts
