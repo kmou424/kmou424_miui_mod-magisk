@@ -7,3 +7,12 @@ debug.sf.latch_unsignaled=1
 
 # Low Memory Killer
 ro.lmk.use_minfree_levels=true
+
+# Enable HiFi Misound
+ro.audio.hifi=true
+persist.audio.hifi=true
+persist.audio.hifi.volume=87
+audio.offload.enable=true
+audio.offload.pcm.enable=true
+audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.24bit.enable=true
