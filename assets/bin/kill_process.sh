@@ -1,7 +1,5 @@
 logx "Starting Kill Process"
 
-sleep 20s
-
 # Kill Process
 function kill_process()
 {

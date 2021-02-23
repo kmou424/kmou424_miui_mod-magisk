@@ -1,9 +1,5 @@
 logx "Starting renice optimization"
 
-sleep 20s
-
-logx "Processing..."
-
 function white_list()
 {
   pgrep -o $1 | while read pid; do

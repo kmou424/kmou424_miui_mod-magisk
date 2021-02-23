@@ -9,5 +9,8 @@ UTILSPATH=/data/kmou424
 # 更多信息请访问 Magisk 主题
 
 . ${UTILSPATH}/assets/bin/shit_log_remover.sh
+
+# We should waiting for 20s and execute below scripts
+sleep 20s
 . ${UTILSPATH}/assets/bin/kill_process.sh
 . ${UTILSPATH}/assets/bin/renice.sh
