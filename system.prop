@@ -40,3 +40,6 @@ debug.mdpcomp.logs=0
 # Android ART LOGD
 dalvik.vm.dex2oat-minidebuginfo=false
 persist.sys.qlogd=0
+
+# This setting puts your phone into a deeper sleep when on standby.
+ro.ril.disable.power.collapse=0
