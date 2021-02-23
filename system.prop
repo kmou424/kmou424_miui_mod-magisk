@@ -16,3 +16,7 @@ audio.offload.enable=true
 audio.offload.pcm.enable=true
 audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
+
+# Enbale Speaker Clean
+ro.vendor.audio.spk.clean=true
+ro.vendor.audio.sfx.earadj=true
