@@ -1,11 +1,12 @@
 VERSION=0.3-BETA
 SUBVERSION=-debug
 
-if [ ! -d "old" ]; then
-	mkdir old
+if [ -f *.zip ]; then
+  if [ ! -d "old" ]; then
+	  mkdir old
+  fi
+  mv *.zip old/
 fi
-
-mv *.zip old/
 
 DATE=$(date "+%Y%m%d")
 HOST=$(hostname)
