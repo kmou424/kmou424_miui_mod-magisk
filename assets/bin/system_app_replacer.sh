@@ -44,6 +44,8 @@ REPLACE="
 /system/app/HybridAccessory
 /system/app/HybridPlatform
 /system/app/goodix_sz
+/system/priv-app/MiuiVideo
+/system/priv-app/Music
 "
 
 ui_print "    感谢酷安@阿巴酱"
