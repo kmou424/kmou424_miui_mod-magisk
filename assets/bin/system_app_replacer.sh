@@ -1,16 +1,5 @@
 ui_print ""
 ui_print "# Installing System App Replacer"
-MIUI=$(getprop ro.miui.ui.version.name)
-if [[ $MIUI = V12 ]] ; then :
-elif [[ $MIUI = V125 ]] ; then : 
-else
-  ui_print "  - 失败, 仅支持MIUI 12/12.5"
-  ui_print ""
-  ui_print "# System App Replacer Installed"
-  rm -rf $MODPATH
-  rm -rf $TMPDIR
-  exit 1
-fi
 ui_print "  - 开始精简:"
 
 REPLACE="
