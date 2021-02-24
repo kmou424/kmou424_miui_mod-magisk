@@ -18,3 +18,4 @@ rm -rf ${UTILSPATH}/log
 sleep 20s
 . ${UTILSPATH}/assets/bin/kill_process.sh
 . ${UTILSPATH}/assets/bin/renice.sh
+. ${UTILSPATH}/assets/bin/network_indicator_interval.sh
