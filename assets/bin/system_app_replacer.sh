@@ -35,6 +35,7 @@ REPLACE="
 /system/app/goodix_sz
 /system/priv-app/MiuiVideo
 /system/priv-app/Music
+/system/priv-app/Browser/
 "
 
 ui_print "    感谢酷安@阿巴酱"
