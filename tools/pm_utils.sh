@@ -4,7 +4,7 @@ function pm_disable()
   if [ $? -eq 0 ]; then
      logx "${TAG}: $PM_DISABLE_RES"
   else
-     logx "${TAG}: Error: $PM_DISABLE_RES"
+     logx "${TAG}: Disable $1 failed"
   fi
 }
 function pm_enable()
@@ -13,6 +13,6 @@ function pm_enable()
   if [ $? -eq 0 ]; then
      logx "${TAG}: $PM_DISABLE_RES"
   else
-     logx "${TAG}: Error: $PM_DISABLE_RES"
+     logx "${TAG}: Enable $1 failed"
   fi
 }
