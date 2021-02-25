@@ -3,7 +3,7 @@ TAG=pmqq
 
 . $UTILSPATH/tools/pm_utils.sh
 
-logx "${TAG}: Starting pmqq service"
+$LOGXPATH "${TAG}: Starting pmqq service"
 pm_disable com.tencent.mobileqq/com.tencent.proxyinner.plugin.loader.PluginToolProcessService
 pm_disable com.tencent.mobileqq/com.tencent.av.service.AVServiceForQQ
 pm_disable com.tencent.mobileqq/com.tencent.av.service.UtilsServiceForAV
@@ -28,4 +28,4 @@ pm_disable com.tencent.mobileqq/com.tencent.mobileqq.mini.app.AppBrandTaskPreloa
 pm_disable com.tencent.mobileqq/com.tencent.mobileqq.ar.ArConfigService
 pm_disable com.tencent.mobileqq/com.tencent.mobileqq.ar.ARGlobalConfigService
 pm_disable com.tencent.mobileqq/cooperation.qzone.plugin.QZonePatchService
-logx "${TAG}: Done"
+$LOGXPATH "${TAG}: Done"

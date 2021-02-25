@@ -52,6 +52,10 @@ ZIPFILE=$3
 mount /data 2>/dev/null
 
 unzip -o "$ZIPFILE" 'tools/*' -d $TMPDIR >&2
+chmod +x $UTILSPATH/tools/*
+
+# Load Constants
+. $TMPDIR/tools/constants.sh
 
 # 加载公用函数
 if [ -f /data/adb/magisk/util_functions.sh ];then

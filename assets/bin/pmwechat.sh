@@ -3,7 +3,7 @@ TAG=pmwechat
 
 . $UTILSPATH/tools/pm_utils.sh
 
-logx "${TAG}: Starting pmwechat service"
+$LOGXPATH "${TAG}: Starting pmwechat service"
 pm_disable com.tencent.mm/com.tencent.mm.sandbox.updater.AppUpdaterUI
 pm_disable com.tencent.mm/com.tencent.mm.sandbox.updater.AppInstallerUI
 pm_disable com.tencent.mm/com.tencent.mm.plugin.nfc_open.ui.NfcWebViewUI
@@ -12,4 +12,4 @@ pm_disable com.tencent.mm/com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloa
 pm_disable com.tencent.mm/com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver2
 pm_disable com.tencent.mm/com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver3
 pm_disable com.tencent.mm/com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver4
-logx "${TAG}: Done"
+$LOGXPATH "${TAG}: Done"
