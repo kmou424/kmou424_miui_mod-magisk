@@ -46,3 +46,6 @@ ro.ril.disable.power.collapse=0
 
 # Enable UBWC to reduce memory overhead
 debug.gralloc.enable_fb_ubwc=1
+
+# Enable large tcp data
+ro.data.large_tcp_window_size=true
