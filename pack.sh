@@ -1,4 +1,4 @@
-VERSION=0.3-BETA
+VERSION=0.4-RC1
 SUBVERSION=-debug
 
 if [ -f *.zip ]; then
