@@ -8,6 +8,7 @@ UTILSPATH=/data/kmou424
 
 rm -rf $UTILSPATH
 mkdir -p $UTILSPATH
+ui_print "# 正在释放开机脚本文件"
 unzip -q -o "$ZIPFILE" 'assets/*' 'tools/*' -d $UTILSPATH
 set_perm_recursive  $UTILSPATH  0  0  0755  0644
 
