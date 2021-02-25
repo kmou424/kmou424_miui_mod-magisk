@@ -43,3 +43,6 @@ persist.sys.qlogd=0
 
 # This setting puts your phone into a deeper sleep when on standby.
 ro.ril.disable.power.collapse=0
+
+# Enable UBWC to reduce memory overhead
+debug.gralloc.enable_fb_ubwc=1
