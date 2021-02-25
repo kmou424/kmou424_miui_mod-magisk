@@ -8,6 +8,9 @@ UTILSPATH=/data/kmou424
 # 这个脚本将以 late_start service 模式执行
 # 更多信息请访问 Magisk 主题
 
+# Load utils
+. $UTILSPATH/tools/util_functions.sh
+
 chmod 0755 /system/bin/logx
 chmod +x /system/bin/logx
 rm -rf ${UTILSPATH}/log
