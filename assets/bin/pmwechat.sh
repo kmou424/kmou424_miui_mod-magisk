@@ -12,5 +12,4 @@ pm_disable com.tencent.mm/com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloa
 pm_disable com.tencent.mm/com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver2
 pm_disable com.tencent.mm/com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver3
 pm_disable com.tencent.mm/com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver4
-pm_disable com.tencent.mm/com.tencent.mm.booter.MMReceivers$SandBoxProcessReceiver
 logx "${TAG}: Done"

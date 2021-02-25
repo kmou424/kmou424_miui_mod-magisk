@@ -24,7 +24,6 @@ pm_disable com.tencent.mobileqq/com.tencent.mobileqq.mini.app.AppBrandTaskPreloa
 pm_disable com.tencent.mobileqq/com.tencent.mobileqq.mini.app.AppBrandTaskPreloadReceiver3
 pm_disable com.tencent.mobileqq/com.tencent.mobileqq.mini.app.AppBrandTaskPreloadReceiver4
 pm_disable com.tencent.mobileqq/com.tencent.mobileqq.mini.app.AppBrandTaskPreloadReceiver5
-pm_disable com.tencent.mobileqq/com.tencent.mobileqq.mini.app.AppBrandTaskPreloadReceiver6
 pm_disable com.tencent.mobileqq/com.tencent.mobileqq.mini.app.AppBrandTaskPreloadReceiver7
 pm_disable com.tencent.mobileqq/com.tencent.mobileqq.ar.ArConfigService
 pm_disable com.tencent.mobileqq/com.tencent.mobileqq.ar.ARGlobalConfigService
