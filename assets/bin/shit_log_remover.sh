@@ -12,8 +12,7 @@ chmod 777 /data/vendor/wlan_logs
 rm -rf /data/vendor/wlan_logs
 touch /data/vendor/wlan_logs
 chmod 000 /data/vendor/wlan_logs
-stop cnss_diag
-killall -9 cnss_diag
+
 # mi-rcs Log (Thanks 酷安@风雪如花剑如霜
 chmod 777 /data/media/0/JuphoonService
 rm -rf /data/media/0/JuphoonService
