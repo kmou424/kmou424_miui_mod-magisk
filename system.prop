@@ -44,8 +44,8 @@ persist.sys.qlogd=0
 # This setting puts your phone into a deeper sleep when on standby.
 ro.ril.disable.power.collapse=0
 
-# Enable UBWC to reduce memory overhead
+# Enable UBWC to reduce memory overhead (Referenced from project com.cyzen.toolbox)
 debug.gralloc.enable_fb_ubwc=1
 
-# Enable large tcp data
+# Enable large tcp data (Referenced from project com.cyzen.toolbox)
 ro.data.large_tcp_window_size=true
