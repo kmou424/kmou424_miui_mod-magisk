@@ -62,9 +62,9 @@ if [ -f /data/adb/magisk/util_functions.sh ];then
   . /data/adb/magisk/util_functions.sh
 else
   if [[ -f $TMPDIR/tools/util_functions.sh ]];then
+    . $TMPDIR/tools/util_functions.sh
     ui_print "- 未能检测到Magisk工具脚本, 使用预置脚本以代替"
     ui_print "- 预置脚本版本: 22.0"
-    . $TMPDIR/tools/util_functions.sh
   else
     ui_print "- 缺失工具脚本, 刷入失败"
     exit 1
