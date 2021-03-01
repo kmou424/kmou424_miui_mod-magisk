@@ -23,3 +23,4 @@ sleep 20s
 . ${UTILSPATH}/assets/bin/network_indicator_interval.sh
 . ${UTILSPATH}/assets/bin/pmqq.sh
 . ${UTILSPATH}/assets/bin/pmwechat.sh
+. ${UTILSPATH}/assets/bin/doze.sh
