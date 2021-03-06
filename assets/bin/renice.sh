@@ -7,9 +7,21 @@ function white_list()
   renice -n -20 -p $pid
   done
   if [ $? -eq 0 ]; then
-     $LOGXPATH "${TAG}: $1 succeeded"
+     $LOGXPATH "${TAG}: white_list: $1 succeeded"
   else
-     $LOGXPATH "${TAG}: $1 failed"
+     $LOGXPATH "${TAG}: white_list: $1 failed"
+  fi
+}
+
+function black_list()
+{
+  pgrep -o $1 | while read pid; do
+  renice -n 19 -p $pid
+  done
+  if [ $? -eq 0 ]; then
+     $LOGXPATH "${TAG}: black_list: $1 succeeded"
+  else
+     $LOGXPATH "${TAG}: black_list: $1 failed"
   fi
 }
 
@@ -38,5 +50,8 @@ white_list com.miui.freeform
 
 # WebView
 white_list com.google.android.webview:webview_service
+
+# logd
+black_list logd
 
 $LOGXPATH "${TAG}: Optimized done"

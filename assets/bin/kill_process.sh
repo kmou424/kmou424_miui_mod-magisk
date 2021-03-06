@@ -13,7 +13,4 @@ function kill_process()
   fi
 }
 
-# Kill logd
-kill_process logd
-
 $LOGXPATH "${TAG}: Done"
