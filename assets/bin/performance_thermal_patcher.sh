@@ -5,6 +5,7 @@ PROCESSOR=${CPUINFO_RES##*Inc }
 
 ui_print "Platform: ${PROCESSOR}"
 if [[ -d ${UTILSPATH}/assets/thermal/${PROCESSOR} ]];then
+    mkdir -p ${MODPATH}/system/vendor/etc
     cp ${UTILSPATH}/assets/thermal/${PROCESSOR}/* ${MODPATH}/system/vendor/etc/
     ui_print "温控安装完成"
     RESULT="成功"
