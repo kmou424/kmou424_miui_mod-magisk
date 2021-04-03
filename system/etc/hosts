@@ -14,31 +14,35 @@
 
 # Github Hosts
 # update: 2021-01-26
-13.75.68.133 github.com
+140.82.114.4 github.com
 13.75.68.133 nodeload.github.com
-13.75.68.133 api.github.com
-13.75.68.133 codeload.github.com
+140.82.112.5 api.github.com
+140.82.113.9 codeload.github.com
+140.82.114.4 gist.github.com
+140.82.112.4 octocaptcha.com
+140.82.112.14 uploads.github.com
 
 13.75.68.133 training.github.com
-13.75.68.133 assets-cdn.github.com
+185.199.111.153 assets-cdn.github.com
 13.75.68.133 documentcloud.github.com
 13.75.68.133 help.github.com
 13.75.68.133 githubstatus.com
 13.75.68.133 customer-stories-feed.github.com
-13.75.68.133 github.githubassets.com
+185.199.109.154 github.githubassets.com
 
 13.75.68.133 github.global.ssl.fastly.net
 13.75.68.133 raw.github.com
-13.75.68.133 raw.githubusercontent.com
-13.75.68.133 cloud.githubusercontent.com
-13.75.68.133 gist.githubusercontent.com
-13.75.68.133 marketplace-screenshots.githubusercontent.com
-13.75.68.133 repository-images.githubusercontent.com
-13.75.68.133 user-images.githubusercontent.com
+185.199.108.133 raw.githubusercontent.com
+185.199.108.133 cloud.githubusercontent.com
+185.199.108.133 gist.githubusercontent.com
+185.199.108.133 marketplace-screenshots.githubusercontent.com
+185.199.108.133 repository-images.githubusercontent.com
+185.199.108.133 user-images.githubusercontent.com
 13.75.68.133 desktop.githubusercontent.com
 
-13.75.68.133 avatars.githubusercontent.com
-13.75.68.133 avatars0.githubusercontent.com
+185.199.108.133 favicons.githubusercontent.com
+185.199.108.133 avatars.githubusercontent.com
+185.199.108.133 avatars0.githubusercontent.com
 13.75.68.133 avatars1.githubusercontent.com
 13.75.68.133 avatars2.githubusercontent.com
 13.75.68.133 avatars3.githubusercontent.com
@@ -47,4 +51,5 @@
 13.75.68.133 avatars6.githubusercontent.com
 13.75.68.133 avatars7.githubusercontent.com
 13.75.68.133 avatars8.githubusercontent.com
+185.199.109.133 camo.githubusercontent.com
 # End of the section
